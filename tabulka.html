@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css">
+    <link rel="stylesheet" href="node_modules/bootswatch/dist/sketchy/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-code"></i> Můj Projekt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Přepnout navigaci">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Domů</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sekce webu
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="">Galerie</a></li>
+                        <li><a class="dropdown-item" href="karty.html">Karty</a></li>
+                        <li><a class="dropdown-item" href="postup.html">Postup projektu</a></li>
+                        <li><a class="dropdown-item" href="tabulka.html">Tabulka</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+        <section class="bg-white p-4 rounded shadow-sm">
+            <h2 class="mb-4"><i class="fa-solid fa-table"></i> Přehled modulů projektu</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-bordered align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>Název modulu</th>
+                            <th>Technologie</th>
+                            <th>Stav</th>
+                            <th>Správce</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>Autentizace uživatelů</td>
+                            <td>PHP / Composer</td>
+                            <td><span class="badge bg-success">Dokončeno</span></td>
+                            <td>Jan Novák</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>Kontaktní formulář</td>
+                            <td>Bootstrap / TinyMCE</td>
+                            <td><span class="badge bg-warning text-dark">Testování</span></td>
+                            <td>Petr Svoboda</td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td>Správa fotogalerie</td>
+                            <td>JavaScript / Carousel</td>
+                            <td><span class="badge bg-success">Dokončeno</span></td>
+                            <td>Eva Malá</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/tinymce/tinymce.min.js"></script>
+</body>
+</html>
