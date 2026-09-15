@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Domu</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css">
@@ -15,7 +15,7 @@
             <a class="navbar-brand" href="index.html"><i class="fas fa-bread-slice text-warning me-2"></i>Křupavý koutek</a>
             <div class="navbar-nav ms-auto">
                 <a class="nav-link active" href="index.html">Domů</a>
-                <a class="nav-link" href="postup.html">Projekt</a>
+                <a class="nav-link" href="cenik.html">Ceník</a>
                 <a class="nav-link" href="predplatne.html">Předplatné</a>
                 <a class="nav-link" href="kontakt.html">Kontakt</a>
             </div>
@@ -24,20 +24,32 @@
 
     <!-- Carousel (4 fotky) -->
     <div id="pekarnaCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#pekarnaCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#pekarnaCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#pekarnaCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#pekarnaCarousel" data-bs-slide-to="3"></button>
+        </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Chléb">
+                <img src="obrazky/chleba.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Chléb">
             </div>
             <div class="carousel-item">
-                <img src="" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Croissant">
+                <img src="obrazky/bagety.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Bagety">
             </div>
             <div class="carousel-item">
-                <img src="" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Pečení">
+                <img src="obrazky/peceni.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Pečení">
             </div>
             <div class="carousel-item">
-                <img src="" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Kavárna">
+                <img src="obrazky/kavarna.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Kavárna">
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#pekarnaCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#pekarnaCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
     </div>
 
     <!-- Karty -->
@@ -46,7 +58,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5>Kváskový chléb</h5><p>Poctivý a čerstvý.</p></div></div></div>
             <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5>Croissant</h5><p>Máslový a křehký.</p></div></div></div>
-            <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5>Koláč</h5><p>Domácí tvarohový.</p></div></div></div>
+            <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5>Bagety</h5><p>Křupavé a nadýchané.</p></div></div></div>
         </div>
     </div>
     </section>

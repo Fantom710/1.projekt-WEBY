@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>predplatne</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css">
@@ -15,7 +15,7 @@
             <a class="navbar-brand" href="index.html">Křupavý koutek</a>
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="index.html">Domů</a>
-                <a class="nav-link" href="postup.html">Projekt</a>
+                <a class="nav-link" href="cenik.html">Ceník</a>
                 <a class="nav-link active" href="predplatne.html">Předplatné</a>
                 <a class="nav-link" href="kontakt.html">Kontakt</a>
             </div>
@@ -27,10 +27,14 @@
         <form class="needs-validation" novalidate>
             <div class="mb-3">
                 <label class="form-label fw-bold">Pečivo: *</label>
-                <select id="peciwo-select" multiple required class="form-control">
+                <select id="pecivo-select" multiple required class="form-control">
                     <option value="" disabled selected>vyberte...</option>
-                    <option value="chleb">Šumavský chléb</option>
+                    <option value="chleb">Chléb</option>
                     <option value="croissant">Máslový croissant</option>
+                    <option value="hamburgerova-bulka">Hamburgerová bulka</option>
+                    <option value="loupak">Loupák</option>
+                    <option value="rohlik">Rohlík</option>
+                    <option value="bageta">Bageta</option>
                 </select>
                 <div class="invalid-feedback">Musíte vybrat alespoň jednu položku!</div>
             </div>

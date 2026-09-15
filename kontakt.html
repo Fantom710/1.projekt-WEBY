@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>kontakt</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css">
@@ -15,7 +15,7 @@
             <a class="navbar-brand" href="index.html">Křupavý koutek</a>
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" href="index.html">Domů</a>
-                <a class="nav-link" href="postup.html">Projekt</a>
+                <a class="nav-link" href="cenik.html">Ceník</a>
                 <a class="nav-link" href="predplatne.html">Předplatné</a>
                 <a class="nav-link active" href="kontakt.html">Kontakt</a>
             </div>
@@ -31,10 +31,18 @@
             </div>
             <div class="mb-3">
                 <label class="form-label">Zpráva:</label>
-                <textarea id="wysiwyg-editor"></textarea>
+                <textarea id="wysiwyg-editor" class="form-control" rows="8"></textarea>
             </div>
             <button type="submit" class="btn btn-dark">Odeslat</button>
         </form>
+        <!-- Progress bar -->
+        <h2 class="mb-3 mt-5">Postup na nových stránkách</h2>
+        <div class="progress mb-5" style="height: 25px;">
+            <div class="progress-bar bg-danger progress-bar-striped" style="width: 10%;">2. 9. 2026</div>
+            <div class="progress-bar bg-warning progress-bar-striped" style="width: 25%;">8. 9. 2026</div>
+            <div class="progress-bar bg-info progress-bar-striped" style="width: 25%;">9. 9. 2026</div>
+            <div class="progress-bar bg-success progress-bar-striped" style="width: 40%;">15. 9. 2026</div>
+        </div>
     </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/tinymce/tinymce.min.js"></script>
