@@ -10,36 +10,37 @@
     <link rel="stylesheet" href="node_modules/bootswatch/dist/sketchy/bootstrap.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-code"></i> Můj Projekt</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Přepnout navigaci">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Domů</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Sekce webu
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="">Galerie</a></li>
-                        <li><a class="dropdown-item" href="karty.html">Karty</a></li>
-                        <li><a class="dropdown-item" href="postup.html">Postup projektu</a></li>
-                        <li><a class="dropdown-item" href="tabulka.html">Tabulka</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="kontakt.html">Kontakt</a>
-                </li>
-            </ul>
-        </div>
+            <a class="navbar-brand" href="index.html"><i class="fas fa-bread-slice text-warning me-2"></i>Křupavý koutek</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="index.html">Domů</a>
+                <a class="nav-link active" href="projekt.html">Projekt</a>
+                <a class="nav-link" href="predplatne.html">Předplatné</a>
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
+            </div>
         </div>
     </nav>
+
+    <div class="container my-5">
+        <!-- Progress bar -->
+        <h2 class="mb-3">Postup stavby nové pece</h2>
+        <div class="progress mb-5" style="height: 25px;">
+            <div class="progress-bar bg-success progress-bar-striped" style="width: 78%;">78 % hotovo</div>
+        </div>
+
+        <!-- Tabulka -->
+        <h2 class="mb-3">Ceník výrobků</h2>
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr><th>Název</th><th>Cena</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Chléb</td><td>65 Kč</td></tr>
+                <tr><td>Croissant</td><td>42 Kč</td></tr>
+            </tbody>
+        </table>
+    </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/tinymce/tinymce.min.js"></script>
 </body>

@@ -10,67 +10,45 @@
     <link rel="stylesheet" href="node_modules/bootswatch/dist/sketchy/bootstrap.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-code"></i> Můj Projekt</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Přepnout navigaci">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Domů</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sekce webu</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="">Galerie</a></li>
-                        <li><a class="dropdown-item" href="karty.html">Karty</a></li>
-                        <li><a class="dropdown-item" href="postup.html">Postup projektu</a></li>
-                        <li><a class="dropdown-item" href="tabulka.html">Tabulka</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="kontakt.html">Kontakt</a>
-                </li>
-            </ul>
-        </div>
-        </div>
-    </nav>
-    <section id="carousel-section" class="my-4">
-        <div class="container">
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Snímek 1"></button>
-                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Snímek 2"></button>
-                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Snímek 3"></button>
-                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Snímek 4"></button>
-                </div>
-                <div class="carousel-inner rounded shadow">
-                    <div class="carousel-item active">
-                        <img src="" class="d-block w-100" alt="Fotka 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="" class="d-block w-100" alt="Fotka 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="" class="d-block w-100" alt="Fotka 3">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="" class="d-block w-100" alt="Fotka 4">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Předchozí</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Další</span>
-                </button>
+            <a class="navbar-brand" href="index.html"><i class="fas fa-bread-slice text-warning me-2"></i>Křupavý koutek</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="index.html">Domů</a>
+                <a class="nav-link" href="projekt.html">Projekt</a>
+                <a class="nav-link" href="predplatne.html">Předplatné</a>
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
             </div>
         </div>
+    </nav>
+
+    <!-- Carousel (4 fotky) -->
+    <div id="pekarnaCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Chléb">
+            </div>
+            <div class="carousel-item">
+                <img src="" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Croissant">
+            </div>
+            <div class="carousel-item">
+                <img src="" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Pečení">
+            </div>
+            <div class="carousel-item">
+                <img src="" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Kavárna">
+            </div>
+        </div>
+    </div>
+
+    <!-- Karty -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Naše speciality</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5>Kváskový chléb</h5><p>Poctivý a čerstvý.</p></div></div></div>
+            <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5>Croissant</h5><p>Máslový a křehký.</p></div></div></div>
+            <div class="col"><div class="card h-100 shadow-sm"><div class="card-body"><h5>Koláč</h5><p>Domácí tvarohový.</p></div></div></div>
+        </div>
+    </div>
     </section>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/tinymce/tinymce.min.js"></script>

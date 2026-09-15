@@ -10,36 +10,32 @@
     <link rel="stylesheet" href="node_modules/bootswatch/dist/sketchy/bootstrap.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-code"></i> Můj Projekt</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Přepnout navigaci">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Domů</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Sekce webu
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="">Galerie</a></li>
-                        <li><a class="dropdown-item" href="karty.html">Karty</a></li>
-                        <li><a class="dropdown-item" href="postup.html">Postup projektu</a></li>
-                        <li><a class="dropdown-item" href="tabulka.html">Tabulka</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="kontakt.html">Kontakt</a>
-                </li>
-            </ul>
-        </div>
+            <a class="navbar-brand" href="index.html">Křupavý koutek</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="index.html">Domů</a>
+                <a class="nav-link" href="projekt.html">Projekt</a>
+                <a class="nav-link" href="predplatne.html">Předplatné</a>
+                <a class="nav-link active" href="kontakt.html">Kontakt</a>
+            </div>
         </div>
     </nav>
+
+    <div class="container my-5">
+        <h2>Kontaktujte nás</h2>
+        <form>
+            <div class="mb-3">
+                <label class="form-label">E-mail:</label>
+                <input type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Zpráva:</label>
+                <textarea id="wysiwyg-editor"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Odeslat</button>
+        </form>
+    </div>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/tinymce/tinymce.min.js"></script>
 </body>
