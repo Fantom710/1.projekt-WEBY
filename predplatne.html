@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css">
     <link rel="stylesheet" href="node_modules/bootswatch/dist/sketchy/bootstrap.min.css">
+    <style>
+        .ts-wrapper.multi .ts-control:has(.item) > input::placeholder {
+            visibility: hidden !important;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -28,7 +33,6 @@
             <div class="mb-3">
                 <label class="form-label fw-bold">Pečivo: *</label>
                 <select id="pecivo-select" multiple required class="form-control">
-                    <option value="" disabled selected>vyberte...</option>
                     <option value="chleb">Chléb</option>
                     <option value="croissant">Máslový croissant</option>
                     <option value="hamburgerova-bulka">Hamburgerová bulka</option>
@@ -50,6 +54,37 @@
         </div>
     </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/tom-select/dist/js/tom-select.complete.min.js"></script>
     <script src="node_modules/tinymce/tinymce.min.js"></script>
+    <script>
+        new TomSelect('#pecivo-select', {
+            plugins: ['remove_button'],
+            maxItems: null,
+            closeAfterSelect: false,
+            hideSelected: true,
+            placeholder: 'Vyberte pečivo...',
+            onItemAdd() {
+                this.control_input.placeholder = '';
+            },
+            onItemRemove() {
+                requestAnimationFrame(() => {
+                    this.control_input.placeholder = this.items.length === 0 ? this.settings.placeholder : '';
+                });
+            }
+        });
+
+        (() => {
+            const form = document.querySelector('.needs-validation');
+
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+
+                form.classList.add('was-validated');
+            });
+        })();
+    </script>
 </body>
 </html>
